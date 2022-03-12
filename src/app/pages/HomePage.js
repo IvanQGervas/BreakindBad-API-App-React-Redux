@@ -1,13 +1,11 @@
 /**
- * 
+ * Componente página del inicio
  */
-// DependenHomePageias
+// Dependencias
 import React from "react";
 
-// Componentes
-
 /**
- * 
+ * Componente página del inicio
  */
 const HomePage = () => {
     return(

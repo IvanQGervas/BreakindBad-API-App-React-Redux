@@ -1,5 +1,5 @@
 /**
- * Contenedor con todas las paginas, renderizas con react-router-dom
+ * Contenedor de todas las páginas, renderizas con react-router-dom
  * 
  */
 // Dependencias
@@ -14,7 +14,7 @@ import CharacterPage from '../pages/CharacterPage'
 import routes from "../../constants/routes";
 
 /**
- * Contenedor con todas las paginas
+ * Contenedor con todas las páginas
  */
 const PagesContiner = () => {
     return(

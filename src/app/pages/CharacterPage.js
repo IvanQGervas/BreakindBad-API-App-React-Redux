@@ -1,12 +1,11 @@
 /**
- * 
+ * Componente página de personaje
  */
 // Dependencias
 import React from "react";
 
-// Componentes
-
 /**
+ * Componente página de personaje
  * 
  */
 const CharacterPage = () => {
