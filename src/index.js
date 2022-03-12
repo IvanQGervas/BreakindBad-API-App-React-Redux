@@ -1,15 +1,21 @@
+// Dependencias
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import './index.css';
-import App from './App';
-import { store } from './modules/store';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { render } from 'react-dom';
+import { store } from './modules/store';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+// Componentes
+import App from './App';
+
+// Estilos
+import './styles.min.css'; // Boostrap
+
+render(
+  <Provider store={store}>
+    <BrowserRouter>
       <App />
-    </Provider>
-  </React.StrictMode>,
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );

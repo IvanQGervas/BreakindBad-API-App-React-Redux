@@ -1,5 +1,5 @@
 /**
- * Constante con las claves de los idiomas disponibles en el diccionario
+ * Claves de los idiomas disponibles en el diccionario
  */
 
 const lang = {

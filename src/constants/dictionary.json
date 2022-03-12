@@ -1,6 +1,10 @@
 {
-    "HELLO_WORLD": {
-        "ES-es": "Hola Mundo!",
-        "EN-en": "Hello World!"
+    "HEADER_HOME_LINK": {
+        "ES-es": "Inicio",
+        "EN-en": "Home"
+    },
+    "HEADER_RANDOM_CHARACTER_LINK": {
+        "ES-es": "Personaje aleatorio",
+        "EN-en": "Random character"
     }
 }
