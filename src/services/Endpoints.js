@@ -3,7 +3,7 @@
  */
 
 // Constantes
-// URL Base de la API de Breaking Bad
+// URL base de la API de Breaking Bad
 const API_BREAKINGBAD = 'https://www.breakingbadapi.com/api';
 
 // ENDPOINTS
