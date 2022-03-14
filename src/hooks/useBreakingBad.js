@@ -6,7 +6,7 @@
 // Dependencias
 import { useDispatch, useSelector } from 'react-redux';
 
-// Actions
+// Acciones
 import { clearData, clearErrors, fetchData } from '../modules/breakingBad/actionsCreators';
 
 /**

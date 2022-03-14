@@ -1,0 +1,16 @@
+/* TODO: Comentar estilos extras */
+.bg-banner-home{
+    background-image: url('../utils/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.character-img-card{
+    min-height: 340px;
+    max-height: 340px;
+    min-width: 100%;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 0px;
+}
