@@ -9,7 +9,9 @@ import { store } from './modules/store';
 import App from './App';
 
 // Estilos
-import './styles.min.css'; // Boostrap
+import './app/css/boostrap.min.css'; // Boostrap
+// TODO: minimizar y comentar
+import './app/css/styles.css'; 
 
 render(
   <Provider store={store}>

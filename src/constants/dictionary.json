@@ -6,5 +6,37 @@
     "HEADER_RANDOM_CHARACTER_LINK": {
         "ES-es": "Personaje aleatorio",
         "EN-en": "Random character"
+    },
+    "HOME_BANNER": {
+        "ES-es": "Toda la información de tus personajes favoritos de la mítica serie Breaking Bad.",
+        "EN-en": "All the information about your favorite characters from the mythical series Breaking Bad."
+    },
+    "SHOW_MORE": {
+        "ES-es": "Ver más",
+        "EN-en": "Show more"
+    },
+    "ERR_MSG_DEFAULT": {
+        "ES-es": "Vaya, parece que ha habido un error.",
+        "EN-en": "Oops, there seems to have been a mistake."
+    },
+    "ERR_MSG_PAGINATION": {
+        "ES-es": "Error en la paginación.",
+        "EN-en": "Error in pagination."
+    },
+    "ERR_MSG_CHARACTER": {
+        "ES-es": "Ha habido un error al cargar los personajes, inténtelo de nuevo. Si el error continúa, inténtelo más tarde.",
+        "EN-en": "There was an error loading the characters, try again. If the error persists try again later."
+    },
+    "TRY_AGAIN": {
+        "ES-es": "Volver a intentarlo",
+        "EN-en": "Try again"
+    },
+    "PREVIOUS": {
+        "ES-es": "Anterior",
+        "EN-en": "Previous"
+    },
+    "NEXT": {
+        "ES-es": "Siguiente",
+        "EN-en": "Next"
     }
 }

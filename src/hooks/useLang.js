@@ -6,7 +6,7 @@
 // Dependencias
 import { useDispatch, useSelector } from 'react-redux';
 
-// Actions
+// Acciones
 import { changeLanguage } from '../modules/lang/actionsCreators';
 
 /**

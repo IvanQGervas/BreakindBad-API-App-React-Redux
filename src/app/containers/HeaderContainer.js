@@ -1,6 +1,5 @@
 /**
- * Contenedor del componente Header
- * 
+ * Contenedor que representa la etiqueta <header> (Cabecera).
  */
 // Dependencias
 import React from "react";

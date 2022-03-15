@@ -1,10 +1,13 @@
 /**
- * Cabecera de la aplicación y componentes relacionados
+ * Cabecera de la aplicación y componentes relacionados de navegación
  * 
  */
 // Dependencias
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+
+// Componentes
+import ContainerBreakpoits from '../containers/ContainerBreakpoits';
 
 // Constantes
 import routes from '../../constants/routes';
@@ -21,8 +24,8 @@ const Header = () => {
     const [, { __ }] = useLang();
 
     return (
-        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-            <div className='container-fluid col-10 offset-1'>
+        <nav className='navbar navbar-expand navbar-light bg-light'>
+            <ContainerBreakpoits>
                 <Link
                     className='navbar-brand'
                     to={routes.HomePage}>
@@ -33,10 +36,10 @@ const Header = () => {
                         {__('HEADER_HOME_LINK', 'Inicio')}
                     </LiNavigation>
                     <LiNavigation route={routes.CharacterPage}>
-                        {__('HEADER_RANDOM_CHARACTER_LINK','Personaje aleatorio')}
+                        {__('HEADER_RANDOM_CHARACTER_LINK', 'Personaje aleatorio')}
                     </LiNavigation>
                 </UlNavigation>
-            </div>
+            </ContainerBreakpoits>
         </nav>
     );
 }
@@ -51,7 +54,7 @@ const UlNavigation = ({ children, className }) => {
 
     return (
         <ul className={[
-            'navbar-nav me-auto mb-2 mb-lg-0',
+            'navbar-nav',
             className
         ].join(' ').trim()}>
             {children}
@@ -65,7 +68,7 @@ const UlNavigation = ({ children, className }) => {
  * @param {Element} children        Elemento/s a renderizar
  * @param {String} className        Clases para la etiqueta li 
  * @param {String} classNameLink    Clases para el componente de navegación
- * @param {String} route            Ruta de la nagevación
+ * @param {String} route            Ruta de la navegación
  */
 const LiNavigation = ({ children, className, classNameLink, route }) => {
 
@@ -81,6 +84,7 @@ const LiNavigation = ({ children, className, classNameLink, route }) => {
                 className={[
                     'nav-link',
                     classNameLink,
+                    // TODO: Arreglar esto
                     pathname === route && 'active'
                 ].join(' ').trim()}
                 to={route}>
