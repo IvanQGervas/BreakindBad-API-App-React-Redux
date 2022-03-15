@@ -1,12 +1,12 @@
 /**
- * Contenedor por los breakpoints generales del diseño
+ * Contenedor con los breakpoints generales del diseño
  * 
  */
 // Dependencias
 import React from "react";
 
 /**
- * Contenedor por los breakpoints generales del diseño
+ * Contenedor con los breakpoints generales del diseño
  * 
  * @param {Element} children    Elemento hijo
  * @param {String} [className]  Clases para el contenedor

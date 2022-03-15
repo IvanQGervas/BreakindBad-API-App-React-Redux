@@ -68,11 +68,9 @@ import HandlerError from './HandlerError';
                     {currentElements}
                     < PaginationNavBar
                         currentPage={currentPage}
-                        elementsPerPage={elementsPerPage}
                         nextPage={nextPage}
                         previousPage={previousPage}
                         setPage={setCurrentPage}
-                        totalElements={elements && elements.length}
                         totalPages={totalPages}
                     />
                 </> ||

@@ -22,9 +22,11 @@ const Banner = ({ classNameContainer, secondaryText, title }) => {
                 <h1 className="display-4 fst-italic">
                     {title}
                 </h1>
-                <p className="lead my-3">
-                    {secondaryText}
-                </p>
+                {secondaryText &&
+                    <p className="lead my-3">
+                        {secondaryText}
+                    </p>
+                }
             </div>
         </div>
     );

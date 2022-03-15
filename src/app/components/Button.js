@@ -14,12 +14,12 @@ const Button = (props) => {
     return (
         <button
             {...props}
-            type={(props.submit || props.type === '"submit') ? 'submit' : props.type}
             className={[
                 'btn',
                 props.className && props.className
             ].join(' ').trim()}
-            onClick={props.onClick}>
+            onClick={props.onClick}
+            type={(props.submit || props.type === '"submit') ? 'submit' : props.type}>
             {props.children}
         </button>
     );
@@ -33,12 +33,13 @@ const Button = (props) => {
  */
 const ButtonPrimary = (props) => {
     return (
-        <Button type="button"
+        <Button
+            {...props}
             className={[
                 'btn btn--primary',
                 props.className && props.className
             ].join(' ').trim()}
-            {...props}>
+            type="button">
             {props.children}
         </Button>
     );
@@ -52,12 +53,13 @@ const ButtonPrimary = (props) => {
  */
 const ButtonLight = (props) => {
     return (
-        <Button type="button"
+        <Button
+            {...props}
             className={[
                 'btn btn-light',
                 props.className && props.className
             ].join(' ').trim()}
-            {...props}>
+            type="button">
             {props.children}
         </Button>
     );
@@ -71,12 +73,13 @@ const ButtonLight = (props) => {
  */
 const ButtonDark = (props) => {
     return (
-        <Button type="button"
+        <Button
+            {...props}
             className={[
                 'btn btn-dark',
                 props.className && props.className
             ].join(' ').trim()}
-            {...props}>
+            type="button">
             {props.children}
         </Button>
     );

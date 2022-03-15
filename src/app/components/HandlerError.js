@@ -37,7 +37,7 @@ const HandlerError = ({ errMsg, handlerErr }) => {
                 <p className="text-center">{errMsg || errMsgDefault}</p>
                 {handlerErr && handlerErr.cbErr &&
                     <ButtonLight
-                        className="btn btn-light d-block mx-auto"
+                        className="d-block mx-auto"
                         onClick={handlerErr.cbErr}>
                         {handlerErr.textButton || errMsgButtonDefault}
                     </ButtonLight>

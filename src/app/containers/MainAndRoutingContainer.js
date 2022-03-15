@@ -1,6 +1,6 @@
 /**
  * Contenedor que representa la etiqueta <main> (contenido principal).
- * Este tiene el routing y será donde se rendericen las diferentes páginas.
+ * Este tiene el routing y es donde se renderizan las diferentes páginas.
  */
 // Dependencias
 import React from "react";
