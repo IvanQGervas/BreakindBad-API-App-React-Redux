@@ -14,3 +14,39 @@
     object-fit: cover;
     border-radius: 0px;
 }
+
+.language-selector{
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+    height: 36px;
+    display: flex;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    background-color: white;
+    border: 1px solid #dee2e6;
+}   
+
+.language-selector--options{
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 42px;
+    right: 0;
+}
+
+.language-selector--options div{
+    display: flex;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.language-selector--options div:hover{
+    background-color: #f8f9fa;
+}
+
+.language-selector--options div span{
+    margin-left: 0.5rem;
+}

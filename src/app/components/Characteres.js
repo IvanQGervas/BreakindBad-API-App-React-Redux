@@ -30,7 +30,7 @@ const Characteres = () => {
     const [, { __ }] = useLang();
 
     // Array de elementos JSX con los datos de cada personaje
-    const [elementsRender, setElementsRender] = useState([]);
+    const [elementsRender, setElementsRender] = useState();
 
     /**
      * Limpia los errores del estado breakingBad en el store
@@ -70,13 +70,14 @@ const Characteres = () => {
         <div className="row">
             {
                 // Mientras se realiza la carga de datos
-                loading && !elementsRender && <Spinner /> ||
+                loading && <Spinner /> ||
                 // En caso de error
                 failFetch && <HandlerError
                     errMsg={errMessage}
                     handlerErr={handlerErr} /> ||
                 // Una vez cargados los datos y generados los elementos
-                data && elementsRender && <Pagination elements={elementsRender} />
+                data && elementsRender && elementsRender.length > 0 &&
+                <Pagination elements={elementsRender} />
             }
         </div>
     );

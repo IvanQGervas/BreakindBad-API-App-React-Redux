@@ -7,4 +7,13 @@ const lang = {
     EN: 'EN-en'
 };
 
+const nameOfTheLanguage = {
+    ES: 'Español',
+    EN: 'English'
+};
+
+export {
+    nameOfTheLanguage
+};
+
 export default lang;
