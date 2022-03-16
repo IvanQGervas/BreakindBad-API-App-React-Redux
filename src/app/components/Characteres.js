@@ -70,7 +70,7 @@ const Characteres = () => {
         <div className="row">
             {
                 // Mientras se realiza la carga de datos
-                loading && <Spinner /> ||
+                loading && !elementsRender && <Spinner /> ||
                 // En caso de error
                 failFetch && <HandlerError
                     errMsg={errMessage}

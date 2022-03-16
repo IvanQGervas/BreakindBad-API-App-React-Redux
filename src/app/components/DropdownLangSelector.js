@@ -1,4 +1,4 @@
-// TODO: Convertor todos los img con svg en un componente
+// TODO: Convertir todos los img con svg en un componente
 /**
  * Componente selector desplegable para cambiar de idioma
  * 
@@ -29,7 +29,7 @@ const DropdownLangSelector = () => {
     const [
         // Idioma actual del estado de la store
         { lang: currentLang },
-        // Función para cambiar el idioma del store
+        // Función para cambiar el idioma de la store
         { changeLanguage }
     ] = useLang();
 
@@ -82,7 +82,7 @@ const DropdownLangOptions = ({ changeLanguage, handlerDisplay }) => {
         });
     };
 
-    // Efecto que oculta el componente al hacer click fuera de el
+    // Efecto que oculta el componente al hacer click fuera de él
     useEffect(() => {
         document.addEventListener('mousedown', (event) => {
             if (
@@ -105,7 +105,7 @@ const DropdownLangOptions = ({ changeLanguage, handlerDisplay }) => {
 
 /**
  * Opción con un idioma para el desplegable.
- * Renderiza la banderia del idioma y su nombre.
+ * Renderiza la bandera del idioma y su nombre.
  * 
  * @param {Function} changeLanguage Función para cambiar el idioma
  *                                  utilizado en el store.
