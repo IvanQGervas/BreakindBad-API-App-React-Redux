@@ -13,7 +13,7 @@ import {
 
 // Estado inicial
 const initialState = {
-    byId: null,
+    byName: null,
     data: null,
     failFetch: false,
     loading: false
@@ -27,7 +27,7 @@ const initialState = {
  *                          y otra clave opcional llamada payload con datos para el estado.
  * @return                  Retorna el estado modificado segun la acción recibida
  */
-export default function brakingBadReducer(state = initialState, action) {
+export default function breakingBadCharactersReducer(state = initialState, action) {
     switch (action.type) {
         case CLEAR_DATA:
             return initialState;
@@ -39,7 +39,7 @@ export default function brakingBadReducer(state = initialState, action) {
             };
         case FETCH_ATTEMPT:
             return {
-                byId: null,
+                byName: null,
                 data: null,
                 failFetch: false,
                 loading: true

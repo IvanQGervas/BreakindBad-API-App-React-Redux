@@ -1,9 +1,8 @@
 /**
  * Acciones creadoras (funciones que ejecutan acciones)
- * del estado breakingBad.
+ * del estado breakingBadCharacters.
  * 
  */
-
 // Acciones
 import {
     CLEAR_DATA,
@@ -45,22 +44,22 @@ export function fetchData() {
 
             // Si se reciben datos
             if (data) {
-                // Se genera un objeto normalizado con los ids de la repuesta
-                // del servicio para un mejor acceso a los datos.
-                const byId = arrayToObject(data, 'char_id');
+                // Se genera un objeto normalizado para un óptimo acceso a los datos.
+                // Las claves son los nombres de los personajes.
+                const byName = arrayToObject(data, 'name');
 
                 // Se establece en el estado los datos recibidos y el objeto normalizado
                 dispatch({
                     type: FETCH_SUCCESS,
                     payload: {
                         data,
-                        byId
+                        byName
                     }
                 });
             }
             return;
         } catch (error) {
-            console.error('[Error breakingBad]: ', error);
+            console.error('[Error breakingBadCharacters]: ', error);
 
             // Se establece en el estado error en la petición
             dispatch({

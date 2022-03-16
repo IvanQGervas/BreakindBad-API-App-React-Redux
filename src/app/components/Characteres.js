@@ -6,7 +6,7 @@
 import React, { useEffect, useState } from "react";
 
 // Hooks
-import useBreakingBad from '../../hooks/useBreakingBad'
+import useBreakingBadCharacters from '../../hooks/useBreakingBadCharacters'
 import useLang from "../../hooks/useLang";
 
 // Componentes
@@ -20,11 +20,11 @@ import Spinner from "./Spinner";
  */
 const Characteres = () => {
 
-    // Hook de breakingBad
+    // Hook de los personajes de Breaking Bad
     let [
         { data, failFetch, loading },
         { clearErrors, fetchData }
-    ] = useBreakingBad();
+    ] = useBreakingBadCharacters();
 
     // Hook del idioma
     const [, { __ }] = useLang();
@@ -33,8 +33,8 @@ const Characteres = () => {
     const [elementsRender, setElementsRender] = useState();
 
     /**
-     * Limpia los errores del estado breakingBad en el store
-     * y reintenta la carga de datos.
+     * Limpia los errores del estado breakingBadCharacters 
+     * en el store y reintenta la carga de datos.
      */
     const cbHandlerError = () => {
         clearErrors();
@@ -47,14 +47,15 @@ const Characteres = () => {
         cbErr: cbHandlerError
     };
 
-    // Efecto que lanza la carga de datos del estado breakingBad en el store
+    // Efecto que lanza la carga de datos en el estado
+    // breakingBadCharacters del store.
     useEffect(() => {
         if (!data || Object.keys(data).length < 0) {
             fetchData();
         }
     }, []);
 
-    // Efecto que transforma los datos de breakingBad en elementos
+    // Efecto que genera con los datos de breakingBadCharacters elementos
     // card y los establece en el estado del componente.
     useEffect(() => {
         if (data && Object.keys(data).length > 0) {

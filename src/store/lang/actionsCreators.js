@@ -1,6 +1,6 @@
 /**
  * Acciones creadoras (funciones que ejecutan acciones)
- * del estado breakingBad.
+ * del estado lang.
  * 
  */
 

@@ -11,7 +11,10 @@ const endPoints = {
     // API BreakingBad
     breakingBadApi: {
         // Todos los personajes
-        getAllCharacters: `${API_BREAKINGBAD}/characters`
+        getAllCharacters: `${API_BREAKINGBAD}/characters`,
+        // Frases de un personaje por su nombre
+        getQuotesFromCharacterName:
+            (name) => `${API_BREAKINGBAD}/quote?author=${name}`
     }
 };
 

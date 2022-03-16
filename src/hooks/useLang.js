@@ -7,7 +7,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 
 // Acciones
-import { changeLanguage } from '../modules/lang/actionsCreators';
+import { changeLanguage } from '../store/lang/actionsCreators';
 
 /**
  * HOOK -> Datos del estado lang y metodos relacionadas

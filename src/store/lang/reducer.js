@@ -15,7 +15,7 @@ import lang from '../../constants/lang'
 // Por lo que se puede utilizar directamente un json como estado inicial en el store
 // sin tener problemas en la carga de los datos. Pero en una versión de producción el
 // diccionario puede ser establecido desde un servicio y modificarse de forma externa sin
-// necesidad de tener que hacer despliegues.
+// necesidad de tener que hacer despliegues para cambiar los textos de la aplicación.
 
 // Estado inicial
 const initialState = {

@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { render } from 'react-dom';
-import { store } from './modules/store';
+import { store } from './store';
 
 // Componentes
 import App from './App';
@@ -13,7 +13,8 @@ import './app/css/boostrap.min.css'; // Boostrap
 // TODO: minimizar y comentar
 import './app/css/styles.css'; 
 
-// TODO: Exportar todo lo que pueda interesar y ver la organización
+// TODO: Exportar todo lo que pueda interesar de los componentes
+// y revisar si quiero hacer cambios en la arquitectura.
 
 render(
   <Provider store={store}>

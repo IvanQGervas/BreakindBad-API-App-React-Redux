@@ -6,12 +6,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 // Funciones reductoras
-import brakingBadReducer from './breakingBad/reducer';
+// Personajes Breaking Bad
+import breakingBadCharactersReducer from './breakingBadCharacters/reducer';
+// Idiomas
 import langReducer from './lang/reducer';
 
 export const store = configureStore({
   reducer: {
-    breakingBad: brakingBadReducer,
+    breakingBadCharacters: breakingBadCharactersReducer,
     lang: langReducer
   }
 });
