@@ -8,6 +8,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 // Componentes
 import ContainerBreakpoits from '../containers/ContainerBreakpoits';
+import DropdownLangSelector from './DropdownLangSelector';
 
 // Constantes
 import routes from '../../constants/routes';
@@ -31,14 +32,17 @@ const Header = () => {
                     to={routes.HomePage}>
                     Breaking Bad App
                 </Link>
-                <UlNavigation>
-                    <LiNavigation route={routes.HomePage}>
-                        {__('HEADER_HOME_LINK', 'Inicio')}
-                    </LiNavigation>
-                    <LiNavigation route={routes.CharacterPage}>
-                        {__('HEADER_RANDOM_CHARACTER_LINK', 'Personaje aleatorio')}
-                    </LiNavigation>
-                </UlNavigation>
+                <div className='d-flex align-items-center'>
+                    <UlNavigation>
+                        <LiNavigation route={routes.HomePage}>
+                            {__('HEADER_HOME_LINK', 'Inicio')}
+                        </LiNavigation>
+                        <LiNavigation route={routes.CharacterPage}>
+                            {__('HEADER_RANDOM_CHARACTER_LINK', 'Personaje aleatorio')}
+                        </LiNavigation>
+                    </UlNavigation>
+                    <DropdownLangSelector />
+                </div>
             </ContainerBreakpoits>
         </nav>
     );

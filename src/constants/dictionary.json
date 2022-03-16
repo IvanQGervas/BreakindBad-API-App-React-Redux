@@ -23,6 +23,10 @@
         "ES-es": "Error en la paginación.",
         "EN-en": "Error in pagination."
     },
+    "PAGINATION_PAGE": {
+        "ES-es": "Página",
+        "EN-en": "Page"
+    },
     "ERR_MSG_CHARACTER": {
         "ES-es": "Ha habido un error al cargar los personajes, inténtelo de nuevo. Si el error continúa, inténtelo más tarde.",
         "EN-en": "There was an error loading the characters, try again. If the error persists try again later."
@@ -38,5 +42,9 @@
     "NEXT": {
         "ES-es": "Siguiente",
         "EN-en": "Next"
+    },
+    "TITLE_PAGE_HOME": {
+        "ES-es": "Personajes",
+        "EN-en": "Characters"
     }
 }

@@ -8,6 +8,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import Characteres from "../components/Characteres";
 import ContainerBreakpoits from "../containers/ContainerBreakpoits";
+import TitlePage from "../components/TitlePage";
 
 // Hooks
 import useLang from "../../hooks/useLang";
@@ -23,10 +24,11 @@ const HomePage = () => {
     return (
         <ContainerBreakpoits>
             <Banner
-                classNameContainer="p-4 p-md-5 mb-4 mt-lg-3 text-white bg-banner-home"
+                classNameContainer="p-4 p-md-5 mb-3 mt-lg-3 text-white bg-banner-home"
                 secondaryText={__('HOME_BANNER',
                     'Toda la información de tus personajes favoritos de la mítica serie Breaking Bad.')}
                 title="Breaking Bad App" />
+            <TitlePage title={__('TITLE_PAGE_HOME', 'Personajes')}/>
             <Characteres />
         </ContainerBreakpoits>
     );

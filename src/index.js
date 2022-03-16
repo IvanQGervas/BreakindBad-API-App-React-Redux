@@ -13,6 +13,8 @@ import './app/css/boostrap.min.css'; // Boostrap
 // TODO: minimizar y comentar
 import './app/css/styles.css'; 
 
+// TODO: Exportar todo lo que pueda interesar y ver la organización
+
 render(
   <Provider store={store}>
     <BrowserRouter>

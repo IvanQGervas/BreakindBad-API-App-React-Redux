@@ -17,16 +17,16 @@ import HandlerError from './HandlerError';
  * @param {Array} elements           Elementos renderizados en la paginación
  * @param {Number} [elementsPerPage] Número máximo de elementos por página
  */
- const Pagination = ({ elements, elementsPerPage = 12 }) => {
+const Pagination = ({ elements, elementsPerPage = 12 }) => {
 
     // Página actual
     const [currentPage, setCurrentPage] = useState(1);
 
-    // Elementos de la página
-    const [currentElements, setCurrentElements] = useState([]);
+    // Elementos de la página actual
+    const [currentElements, setCurrentElements] = useState();
 
     // Hook del idioma
-    const [, {__}] = useLang();
+    const [, { __ }] = useLang();
 
     // Número total de páginas
     const totalPages = Math.ceil(elements.length / elementsPerPage);
@@ -63,8 +63,12 @@ import HandlerError from './HandlerError';
 
     return (
         <>
-            {currentElements && currentElements.length > 0 &&
-                <>
+            {!elements || elements && elements.length === 0
+                ? <HandlerError errMsg={__('Error en la paginación.')} />
+                : <>
+                    <p className='col-12 fst-italic fw-light fs-6 text-end m-0'>
+                        {__('PAGINATION_PAGE', 'Página')} {currentPage}/{totalPages}
+                    </p>
                     {currentElements}
                     < PaginationNavBar
                         currentPage={currentPage}
@@ -73,8 +77,7 @@ import HandlerError from './HandlerError';
                         setPage={setCurrentPage}
                         totalPages={totalPages}
                     />
-                </> ||
-                <HandlerError errMsg={__('Error en la paginación.')}/>
+                </>
             }
         </>
     )
@@ -90,7 +93,7 @@ import HandlerError from './HandlerError';
  * @param {Function} setPage        Renderiza una página específica
  * @param {Number} totalPages       Número total de páginas
  */
- const PaginationNavBar = ({
+const PaginationNavBar = ({
     currentPage,
     nextPage,
     previousPage,
