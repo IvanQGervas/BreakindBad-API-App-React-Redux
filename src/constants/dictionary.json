@@ -27,9 +27,21 @@
         "ES-es": "Página",
         "EN-en": "Page"
     },
+    "RETURN_HOME": {
+        "ES-es": "Volver al Inicio",
+        "EN-en": "Return to Home"
+    },
     "ERR_MSG_CHARACTER": {
         "ES-es": "Ha habido un error al cargar los personajes, inténtelo de nuevo. Si el error continúa, inténtelo más tarde.",
         "EN-en": "There was an error loading the characters, try again. If the error persists try again later."
+    },
+    "ERR_MSG_DETAILS_CHARACTER_FETCH": {
+        "ES-es": "Ha habido un error, inténtelo de nuevo. Si el error continúa, inténtelo más tarde.",
+        "EN-en": "There was an error, try again. If the error persists try again later."
+    },
+    "ERR_MSG_DETAILS_CHARACTER": {
+        "ES-es": "Personaje no encontrado. Ver todos los personajes:",
+        "EN-en": "Character not found. View all characters:"
     },
     "TRY_AGAIN": {
         "ES-es": "Volver a intentarlo",

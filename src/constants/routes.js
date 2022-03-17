@@ -3,8 +3,11 @@
  */
 
  const routes = {
+     // Página de inicio
     HomePage: '/',
-    CharacterPage: '/character/:id'
+    // Página de personaje
+    CharacterPage: '/character',
+    CharacterPageParams: '/character/:charName'
 };
 
 export default routes;

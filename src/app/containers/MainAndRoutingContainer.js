@@ -20,7 +20,7 @@ const MainAndRoutingContainer = () => {
     return (
         <Routes>
             <Route path={routes.HomePage} element={<HomePage />} />
-            <Route path={routes.CharacterPage} element={<CharacterPage />} />
+            <Route path={routes.CharacterPageParams} element={<CharacterPage />} />
             {/* TODO: Pagina 404 */}
         </Routes>
     );

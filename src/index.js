@@ -16,6 +16,8 @@ import './app/css/styles.css';
 // TODO: Exportar todo lo que pueda interesar de los componentes
 // y revisar si quiero hacer cambios en la arquitectura.
 
+// TODO: Mejorar comentarios de todos los archivos, especial componentes páginas
+
 render(
   <Provider store={store}>
     <BrowserRouter>

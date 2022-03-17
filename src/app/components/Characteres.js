@@ -23,7 +23,7 @@ const Characteres = () => {
     // Hook de los personajes de Breaking Bad
     let [
         { data, failFetch, loading },
-        { clearErrors, fetchData }
+        { clearData, clearErrors, fetchData }
     ] = useBreakingBadCharacters();
 
     // Hook del idioma
@@ -33,10 +33,11 @@ const Characteres = () => {
     const [elementsRender, setElementsRender] = useState();
 
     /**
-     * Limpia los errores del estado breakingBadCharacters 
-     * en el store y reintenta la carga de datos.
+     * Limpia los datos y errores del estado breakingBadCharacters 
+     * del store y reintenta la carga de datos.
      */
     const cbHandlerError = () => {
+        clearData();
         clearErrors();
         fetchData();
     };
@@ -61,7 +62,9 @@ const Characteres = () => {
         if (data && Object.keys(data).length > 0) {
             setElementsRender(
                 data.map((character, index) =>
-                    <CharacterCard character={character} key={`character-${index}`} />
+                    <CharacterCard
+                        character={character}
+                        key={`character-${index}`} />
                 )
             );
         }
@@ -70,12 +73,12 @@ const Characteres = () => {
     return (
         <div className="row">
             {
-                // Mientras se realiza la carga de datos
-                loading && !elementsRender && <Spinner /> ||
                 // En caso de error
                 failFetch && <HandlerError
                     errMsg={errMessage}
                     handlerErr={handlerErr} /> ||
+                // Mientras se realiza la carga de datos
+                loading && !elementsRender && <Spinner /> ||
                 // Una vez cargados los datos y generados los elementos
                 data && elementsRender && elementsRender.length > 0 &&
                 <Pagination elements={elementsRender} />
