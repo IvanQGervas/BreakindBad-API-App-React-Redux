@@ -36,7 +36,7 @@ const ButtonPrimary = (props) => {
         <Button
             {...props}
             className={[
-                'btn btn--primary',
+                'btn--primary',
                 props.className && props.className
             ].join(' ').trim()}
             type="button">
@@ -56,7 +56,7 @@ const ButtonLight = (props) => {
         <Button
             {...props}
             className={[
-                'btn btn-light',
+                'btn-light',
                 props.className && props.className
             ].join(' ').trim()}
             type="button">
@@ -76,7 +76,7 @@ const ButtonDark = (props) => {
         <Button
             {...props}
             className={[
-                'btn btn-dark',
+                'btn-dark',
                 props.className && props.className
             ].join(' ').trim()}
             type="button">

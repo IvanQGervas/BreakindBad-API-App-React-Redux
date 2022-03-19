@@ -19,8 +19,9 @@ import { ButtonLight } from './Button'
  * @param {Object} [handlerErr]   Objeto con una función de cb para
  *                                un botón y texto del botón.
  *                                Claves del objeto: {cbErr, textButton}.
+ * @param {String} [typeAlert]    Tipo de alerta
  */
-const HandlerError = ({ errMsg, handlerErr }) => {
+const HandlerError = ({ errMsg, handlerErr, typeAlert = 'danger' }) => {
 
     // Hook del idioma
     const [, { __ }] = useLang();
@@ -33,7 +34,7 @@ const HandlerError = ({ errMsg, handlerErr }) => {
 
     return (
         <div className="row">
-            <div className=" col-8 offset-2 alert alert-danger">
+            <div className={`col-8 offset-2 alert alert-${typeAlert}`}>
                 <p className="text-center">{errMsg || errMsgDefault}</p>
                 {handlerErr && handlerErr.cbErr &&
                     <ButtonLight

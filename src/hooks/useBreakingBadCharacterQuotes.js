@@ -1,5 +1,5 @@
 /**
- * HOOK -> Datos del estado breakingBadCharacters y metodos relacionados
+ * HOOK -> Datos del estado breakingBadCharacterQuotes y metodos relacionados
  * 
  */
 
@@ -7,20 +7,20 @@
 import { useDispatch, useSelector } from 'react-redux';
 
 // Acciones
-import { clearData, clearErrors, fetchData } from '../store/breakingBadCharacters/actionsCreators';
+import { clearData, clearErrors, fetchData } from '../store/breakingBadCharacterQuotes/actionsCreators';
 
 /**
- * HOOK -> Datos del estado breakingBadCharacters y metodos relacionados
+ * HOOK -> Datos del estado breakingBadCharacterQuotes y metodos relacionados
  */
-const useBreakingBadCharacters = () => {
+const useBreakingBadCharacterQuotes = () => {
 
     // Se recoge el estado del store
-    const data = useSelector(state => state.breakingBadCharacters);
+    const data = useSelector(state => state.breakingBadCharacterQuotes);
     const dispatch = useDispatch();
 
     // Carga de datos
-    const dispatchFetchData = () => {
-        dispatch(fetchData());
+    const dispatchFetchData = (charName) => {
+        dispatch(fetchData(charName));
     };
 
     // Limpieza de todos los datos
@@ -44,4 +44,4 @@ const useBreakingBadCharacters = () => {
     ];
 };
 
-export default useBreakingBadCharacters;
+export default useBreakingBadCharacterQuotes;

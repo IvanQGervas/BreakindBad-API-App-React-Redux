@@ -16,6 +16,10 @@ import './app/css/styles.css';
 // TODO: Exportar todo lo que pueda interesar de los componentes
 // y revisar si quiero hacer cambios en la arquitectura.
 
+// TODO: Mejorar comentarios de todos los archivos, especial componentes páginas
+
+// TODO: Que al cambiar de pagina te redirija arriba el scroll
+
 render(
   <Provider store={store}>
     <BrowserRouter>

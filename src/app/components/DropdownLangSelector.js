@@ -113,9 +113,7 @@ const DropdownLangOptions = ({ changeLanguage, handlerDisplay }) => {
  */
 const DropdownLangOption = ({ changeLanguage, langCode }) => {
     return (
-        <div
-            onClick={() => changeLanguage(lang[langCode])}
-        >
+        <div onClick={() => changeLanguage(lang[langCode])}>
             <FlagIcon langCode={lang[langCode]} />
             <span>{nameOfTheLanguage[langCode].toUpperCase()}</span>
         </div>

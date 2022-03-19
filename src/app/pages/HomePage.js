@@ -28,7 +28,9 @@ const HomePage = () => {
                 secondaryText={__('HOME_BANNER',
                     'Toda la información de tus personajes favoritos de la mítica serie Breaking Bad.')}
                 title="Breaking Bad App" />
-            <TitlePage title={__('TITLE_PAGE_HOME', 'Personajes')}/>
+            <TitlePage>
+                {__('TITLE_PAGE_HOME', 'Personajes')}
+            </TitlePage>
             <Characteres />
         </ContainerBreakpoits>
     );
