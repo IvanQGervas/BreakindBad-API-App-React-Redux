@@ -1,6 +1,6 @@
 /**
  * Acciones creadoras (funciones que ejecutan acciones)
- * del estado breakingBadCharacters.
+ * del estado breakingBadCharacterQuotes.
  * 
  */
 // Acciones
@@ -12,16 +12,13 @@ import {
     FETCH_SUCCESS,
 } from './actionTypes';
 
-// Ayudantes
-import arrayToObject from '../../utils/arrayToObject';
-
 // Servicios
-import { getAllCharacters as Service } from '../../services/api/breakingBadApi';
+import { getRandomQuoteWithCharacterName as Service } from '../../services/api/breakingBadApi';
 
 /**
  * Carga de datos
  */
-export function fetchData() {
+export function fetchData(charName) {
     return async (dispatch) => {
 
         // Se establece en el estado el intento de carga de datos
@@ -31,7 +28,7 @@ export function fetchData() {
 
         try {
             // Llamada al servicio
-            const data = await Service();
+            const data = await Service(charName);
 
             // Si no se recibe nada del servicio
             if (!data) {
@@ -44,22 +41,15 @@ export function fetchData() {
 
             // Si se reciben datos
             if (data) {
-                // Se genera un objeto normalizado para un óptimo acceso a los datos.
-                // Las claves son los nombres de los personajes.
-                const byName = arrayToObject(data, 'name');
-
-                // Se establece en el estado los datos recibidos y el objeto normalizado
+                // Se establece en el estado los datos recibidos
                 dispatch({
                     type: FETCH_SUCCESS,
-                    payload: {
-                        data,
-                        byName
-                    }
+                    payload: data
                 });
             }
             return;
         } catch (error) {
-            console.error('[Error breakingBadCharacters]: ', error);
+            console.error('[Error breakingBadCharacterQuotes]: ', error);
 
             // Se establece en el estado error en la petición
             dispatch({

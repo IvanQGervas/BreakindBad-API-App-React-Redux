@@ -22,9 +22,9 @@ export function getAllCharacters() {
  * @param {String} name Nombre del personaje
  * @return  Retorna la respuesta de la petición 
  */
-export function getQuotesFromCharacterName(name) {
+export function getRandomQuoteWithCharacterName(charName) {
     return Http.get(
-        EndPoints.breakingBadApi.getQuotesFromCharacterName(name)
+        EndPoints.breakingBadApi.getRandomQuoteWithCharacterName(charName)
     )
         .then(res => res.json());
 }

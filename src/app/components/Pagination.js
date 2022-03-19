@@ -109,13 +109,13 @@ const PaginationNavBar = ({
      */
     const renderNumbersOfPages = () => {
         const elements = [];
-        for (let i = 1; i <= totalPages; i++) {
+        for (let index = 1; index <= totalPages; index++) {
             elements.push(
                 <ButtonPaginationBar
-                    conditionToDisable={currentPage === i}
-                    key={`button-number-pagination-${i}`}
-                    onClick={() => setPage(i)}>
-                    {i}
+                    conditionToDisable={currentPage === index}
+                    key={`button-number-pagination-${index}`}
+                    onClick={() => setPage(index)}>
+                    {index}
                 </ButtonPaginationBar>
             );
 

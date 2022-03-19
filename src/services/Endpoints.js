@@ -13,8 +13,8 @@ const endPoints = {
         // Todos los personajes
         getAllCharacters: `${API_BREAKINGBAD}/characters`,
         // Frases de un personaje por su nombre
-        getQuotesFromCharacterName:
-            (name) => `${API_BREAKINGBAD}/quote?author=${name}`
+        getRandomQuoteWithCharacterName:
+            (charName) => `${API_BREAKINGBAD}/quote/random?author=${charName}`
     }
 };
 

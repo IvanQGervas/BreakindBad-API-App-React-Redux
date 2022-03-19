@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 // Hooks
 import useLang from "../../hooks/useLang";
 
+// Componentes
+import ImageFrame from "../containers/ImageFrame";
+
 /**
  * Componente card los datos de un personaje.
  * Renderiza los datos mínimos para identificar un personaje,
@@ -26,11 +29,11 @@ const CharacterCard = ({ character }) => {
 
     return (
         <div className="p-3 p-md-2 col-lg-3 col-md-4 col-sm-6 col-12">
-            <div className="border">
+            <div className="border h-100">
                 {img &&
-                    <img
+                    <ImageFrame
                         alt={name && `img-${name}`}
-                        className="card-img-top character-img-card"
+                        classNameImg="card-img-top character-img-card"
                         src={img} />
                 }
                 {(name || nickname) &&

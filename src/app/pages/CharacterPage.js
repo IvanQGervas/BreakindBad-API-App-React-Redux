@@ -5,26 +5,26 @@
 import React, { useState } from "react";
 
 // Componentes
-import CharacterDetails from '../components/CharacterDetails';
+import CharacterData from '../components/CharacterData';
+import CharacterQuotes from '../components/CharacterQuotes';
 import ContainerBreakpoits from "../containers/ContainerBreakpoits";
-import TitlePage from "../components/TitlePage";
 
 /**
  * Componente página de personaje
  */
 const CharacterPage = () => {
 
-    // Estado con el título de la página
-    const [titlePage, setTitlePage] = useState();
+    // Estado con el nombre del personaje renderizado
+    const [nameRenderedCharacter, setNameRenderedCharacter] = useState();
 
     return (
         <ContainerBreakpoits>
-            {titlePage &&
-                <TitlePage title={titlePage} />
+            <CharacterData setNameRenderedCharacter={setNameRenderedCharacter} />
+            {nameRenderedCharacter &&
+                <CharacterQuotes characterName={nameRenderedCharacter} />
             }
-            <CharacterDetails setTitlePage={setTitlePage} />
         </ContainerBreakpoits>
     );
-}
+};
 
 export default CharacterPage;

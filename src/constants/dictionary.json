@@ -32,11 +32,11 @@
         "EN-en": "Return to Home"
     },
     "ERR_MSG_CHARACTER": {
-        "ES-es": "Ha habido un error al cargar los personajes, inténtelo de nuevo. Si el error continúa, inténtelo más tarde.",
+        "ES-es": "Ha habido un error al cargar los personajes. Si el error continúa, inténtelo más tarde.",
         "EN-en": "There was an error loading the characters, try again. If the error persists try again later."
     },
     "ERR_MSG_DETAILS_CHARACTER_FETCH": {
-        "ES-es": "Ha habido un error, inténtelo de nuevo. Si el error continúa, inténtelo más tarde.",
+        "ES-es": "Ha habido un error. Si el error continúa, inténtelo más tarde.",
         "EN-en": "There was an error, try again. If the error persists try again later."
     },
     "ERR_MSG_DETAILS_CHARACTER": {
@@ -47,6 +47,14 @@
         "ES-es": "Volver a intentarlo",
         "EN-en": "Try again"
     },
+    "RANDOM_QUOTE": {
+        "ES-es": "Frase aleatoria",
+        "EN-en": "Random quote"
+    },
+    "FAMOUS_QUOTE": {
+        "ES-es": "Frase celebre",
+        "EN-en": "Famous quote"
+    },
     "PREVIOUS": {
         "ES-es": "Anterior",
         "EN-en": "Previous"
@@ -54,6 +62,34 @@
     "NEXT": {
         "ES-es": "Siguiente",
         "EN-en": "Next"
+    },
+    "NAME": {
+        "ES-es": "Nombre",
+        "EN-en": "Name"
+    },
+    "BIRTHDAY": {
+        "ES-es": "Cumpleaños",
+        "EN-en": "Birthday"
+    },
+    "NICKNAME": {
+        "ES-es": "Alias",
+        "EN-en": "Nickname"
+    },
+    "CATEGORY": {
+        "ES-es": "Categoría",
+        "EN-en": "Category"
+    },
+    "PORTRAYED": {
+        "ES-es": "Protagonizado por",
+        "EN-en": "Starring"
+    },
+    "STATUS": {
+        "ES-es": "Estado",
+        "EN-en": "Status"
+    },
+    "OCCUPATION": {
+        "ES-es": "Ocupación",
+        "EN-en": "Occupation"
     },
     "TITLE_PAGE_HOME": {
         "ES-es": "Personajes",
