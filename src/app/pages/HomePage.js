@@ -5,7 +5,7 @@
 import React from "react";
 
 // Componentes
-import Banner from "../components/Banner/index.js";
+import Banner from "../components/Banner/index";
 import Characteres from "../components/Characteres";
 import ContainerBreakpoits from "../components/ContainerBreakpoits";
 import Title from "../components/Title";
