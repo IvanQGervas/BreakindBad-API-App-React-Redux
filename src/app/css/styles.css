@@ -1,11 +1,17 @@
-/* TODO: Comentar estilos extras */
+/* Estilos para el banner renderizado en el componente HomePage */
 .bg-banner-home{
-    background-image: url('../utils/images/banner.jpg');
+    background-image: url('../assets/images/banner-home.jpg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
 }
 
+/* Estilos para el logo renderiza en el componente Header */
+.logo-header{
+    height: 30px;
+}
+
+/* Estilos para el componente Card */
 .character-img-card{
     height: 340px;
     min-width: 100%;
@@ -14,6 +20,8 @@
     border-radius: 0px;
 }
 
+
+/* Estilos para el componente LangSelector y DropdownLangOptions */
 .language-selector{
     border-radius: 0.25rem;
     cursor: pointer;

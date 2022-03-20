@@ -1,12 +1,13 @@
 /**
- * Renderiza una frase y el nombre de su autor
+ * Componente que renderiza una frase y el nombre de su autor
  * 
  */
 // Dependencias
 import React from "react";
 
 /**
- * Renderiza una frase y el nombre de su autor
+ * Renderiza una frase y el nombre de su autor.
+ * El nombre del autor es opcional.
  * 
  * @param {String} [author]     Nombre del autor
  * @param {String} children     Elemento o frase a renderizar
@@ -14,7 +15,7 @@ import React from "react";
  *                              del componente.
  */
 const Quote = ({ author, children, className }) => {
-    return author && (
+    return (
         <div className={[
             'd-block bg-light border rounded',
             className && className
@@ -26,7 +27,7 @@ const Quote = ({ author, children, className }) => {
                 </span>
             }
         </div>
-    ) || null;
+    );
 };
 
 export default Quote;

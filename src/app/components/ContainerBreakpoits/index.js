@@ -1,12 +1,15 @@
 /**
- * Contenedor con los breakpoints generales del diseño
+ * Contenedor con los breakpoints generales
  * 
  */
 // Dependencias
 import React from "react";
 
 /**
- * Contenedor con los breakpoints generales del diseño
+ * Contenedor con los breakpoints generales.
+ * Este es utilizado en los componentes situados
+ * más arriba en el DOM, como componentes página,
+ * para mantener una línea general en el diseño de la web. 
  * 
  * @param {Element} children    Elemento hijo
  * @param {String} [className]  Clases para el contenedor

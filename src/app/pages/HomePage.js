@@ -5,10 +5,10 @@
 import React from "react";
 
 // Componentes
-import Banner from "../components/Banner";
+import Banner from "../components/Banner/index.js";
 import Characteres from "../components/Characteres";
-import ContainerBreakpoits from "../containers/ContainerBreakpoits";
-import TitlePage from "../components/TitlePage";
+import ContainerBreakpoits from "../components/ContainerBreakpoits";
+import Title from "../components/Title";
 
 // Hooks
 import useLang from "../../hooks/useLang";
@@ -28,9 +28,9 @@ const HomePage = () => {
                 secondaryText={__('HOME_BANNER',
                     'Toda la información de tus personajes favoritos de la mítica serie Breaking Bad.')}
                 title="Breaking Bad App" />
-            <TitlePage>
+            <Title>
                 {__('TITLE_PAGE_HOME', 'Personajes')}
-            </TitlePage>
+            </Title>
             <Characteres />
         </ContainerBreakpoits>
     );

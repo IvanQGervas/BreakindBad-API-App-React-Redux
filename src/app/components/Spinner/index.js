@@ -6,7 +6,7 @@
 import React from "react";
 
 /**
- * Spinner animado
+ * Spinner animado.
  * 
  * @param {string} [dimensions] Tamaño del spinner
  */

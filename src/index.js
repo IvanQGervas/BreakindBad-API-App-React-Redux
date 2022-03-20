@@ -9,16 +9,8 @@ import { store } from './store';
 import App from './App';
 
 // Estilos
-import './app/css/boostrap.min.css'; // Boostrap
-// TODO: minimizar y comentar
+import './app/css/boostrap.min.css'; // Boostrap 5.1.3
 import './app/css/styles.css'; 
-
-// TODO: Exportar todo lo que pueda interesar de los componentes
-// y revisar si quiero hacer cambios en la arquitectura.
-
-// TODO: Mejorar comentarios de todos los archivos, especial componentes páginas
-
-// TODO: Que al cambiar de pagina te redirija arriba el scroll
 
 render(
   <Provider store={store}>

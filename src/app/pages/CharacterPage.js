@@ -5,12 +5,16 @@
 import React, { useState } from "react";
 
 // Componentes
-import CharacterData from '../components/CharacterData';
-import CharacterQuotes from '../components/CharacterQuotes';
-import ContainerBreakpoits from "../containers/ContainerBreakpoits";
+import { CharacterData } from '../components/Characteres';
+import { CharacterQuotes } from '../components/Characteres';
+import ContainerBreakpoits from "../components/ContainerBreakpoits";
 
 /**
- * Componente página de personaje
+ * Componente página de personaje.
+ * Esta página renderiza todos los datos disponibles
+ * acerca de un personaje en específico.
+ * También, en caso de existir, renderiza frases
+ * célebres del personaje.
  */
 const CharacterPage = () => {
 

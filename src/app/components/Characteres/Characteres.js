@@ -6,17 +6,21 @@
 import React, { useEffect, useState } from "react";
 
 // Hooks
-import useBreakingBadCharacters from '../../hooks/useBreakingBadCharacters'
-import useLang from "../../hooks/useLang";
+import useBreakingBadCharacters from '../../../hooks/useBreakingBadCharacters'
+import useLang from "../../../hooks/useLang";
 
 // Componentes
-import CharacterCard from "./CharacterCard";
-import HandlerError from './HandlerError';
-import Pagination from "./Pagination";
-import Spinner from "./Spinner";
+import Card from "../Card";
+import HandlerError from '../HandlerError';
+import Pagination from "../Pagination";
+import Spinner from "../Spinner";
 
 /**
- * Renderiza todos los personajes
+ * Renderiza todos los personajes en una paginación.
+ * Realiza la carga de los datos de todos los
+ * personajes en el store.
+ * En caso de error, renderiza una alerta en
+ * pantalla y permite reintentar la carga.
  */
 const Characteres = () => {
 
@@ -29,7 +33,7 @@ const Characteres = () => {
     // Hook del idioma
     const [, { __ }] = useLang();
 
-    // Array de elementos JSX con los datos de cada personaje
+    // Array de elementos Card con los datos de cada personaje
     const [elementsRender, setElementsRender] = useState();
 
     /**
@@ -62,8 +66,12 @@ const Characteres = () => {
         if (data && Object.keys(data).length > 0) {
             setElementsRender(
                 data.map((character, index) =>
-                    <CharacterCard
-                        character={character}
+                    <Card
+                        className='p-3 p-md-2 col-lg-3 col-md-4 col-sm-6 col-12'
+                        img={character.img}
+                        navigationUrl={`/character/${character.name}`}
+                        title={character.name}
+                        secondaryText={character.nickname}
                         key={`character-${index}`} />
                 )
             );
