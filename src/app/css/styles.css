@@ -1,0 +1,59 @@
+/* Estilos para el banner renderizado en el componente HomePage */
+.bg-banner-home{
+    background-image: url('../assets/images/banner-home.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+/* Estilos para el logo renderiza en el componente Header */
+.logo-header{
+    height: 30px;
+}
+
+/* Estilos para el componente Card */
+.character-img-card{
+    height: 340px;
+    min-width: 100%;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+
+/* Estilos para el componente LangSelector y DropdownLangOptions */
+.language-selector{
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+    height: 36px;
+    display: flex;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    background-color: white;
+    border: 1px solid #dee2e6;
+}   
+
+.language-selector--options{
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 42px;
+    right: 0;
+}
+
+.language-selector--options div{
+    display: flex;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.language-selector--options div:hover{
+    background-color: #f8f9fa;
+}
+
+.language-selector--options div span{
+    margin-left: 0.5rem;
+}
