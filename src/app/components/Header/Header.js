@@ -39,7 +39,7 @@ const Header = () => {
                     className='navbar-brand'
                     to={routes.HomePage}>
                     <ImageFrame alt='logo' classNameImg='logo-header me-1' src={logo} />
-                    Breaking Bad App
+                    <span className='d-none d-sm-inline'>Breaking Bad App</span>
                 </Link>
                 <div className='d-flex align-items-center'>
                     <UlNavigation>
