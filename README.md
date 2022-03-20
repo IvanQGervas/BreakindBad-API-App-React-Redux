@@ -6,10 +6,6 @@
 
 Todos estos datos están disponibles gracias a https://breakingbadapi.com/
 
-**Tabla de contenidos**
-
-[TOC]
-
 ## Comenzando 🚀
 
 
