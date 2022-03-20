@@ -6,14 +6,14 @@
 import React, { useEffect } from "react";
 
 // Hooks
-import useBreakingBadCharacterQuotes from "../../hooks/useBreakingBadCharacterQuotes";
-import useLang from "../../hooks/useLang";
+import useBreakingBadCharacterQuotes from "../../../hooks/useBreakingBadCharacterQuotes";
+import useLang from "../../../hooks/useLang";
 
 // Componentes
-import { ButtonDark } from "./Button";
-import Quote from "./Quote";
-import Spinner from "./Spinner";
-import TitlePage from "./TitlePage";
+import { ButtonDark } from "../Button";
+import Quote from "../Quote";
+import Spinner from "../Spinner";
+import Title from "../Title";
 
 /**
  * Componente que renderiza frases célebres del personaje.
@@ -70,9 +70,9 @@ const CharacterQuotes = ({ characterName }) => {
                 data && data.quote &&
                 <div className="col-12 col-sm-10 offset-sm-1 mt-3 mb-5">
                     <div className="d-flex align-items-center justify-content-between">
-                        <TitlePage className='d-inline' Tag='h3' separator={false}>
+                        <Title className='d-inline' Tag='h3' separator={false}>
                             {__('FAMOUS_QUOTE', 'Frase celebre')}
-                        </TitlePage>
+                        </Title>
                         <ButtonDark onClick={chargeRandomQuote}>
                             {__('RANDOM_QUOTE', 'Frase aleatoria')}
                         </ButtonDark>

@@ -7,8 +7,8 @@
 import lang from './lang';
 
 // SVG
-import En from '../app/utils/svg/en.svg';
-import Es from '../app/utils/svg/es.svg';
+import En from '../app/assets/svg/en.svg';
+import Es from '../app/assets/svg/es.svg';
 
  const langFlag = {
     [lang.ES]: Es,

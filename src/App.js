@@ -6,8 +6,8 @@
 import React from 'react';
 
 // Contenedores
-import HeaderContainer from './app/containers/HeaderContainer';
-import MainAndRoutingContainer from './app/containers/MainAndRoutingContainer';
+import Header from './app/components/Header';
+import Routing from './app/components/Routing';
 
 /**
  * Componente principal de la aplicación
@@ -15,10 +15,10 @@ import MainAndRoutingContainer from './app/containers/MainAndRoutingContainer';
 function App() {
   return (
     <>
-      <HeaderContainer />
-      <MainAndRoutingContainer />
+      <Header />
+      <Routing />
     </>
   );
-}
+};
 
 export default App;

@@ -48,12 +48,15 @@ export function fetchData() {
                 // Las claves son los nombres de los personajes.
                 const byName = arrayToObject(data, 'name');
 
+                const names = Object.keys(byName);
+
                 // Se establece en el estado los datos recibidos y el objeto normalizado
                 dispatch({
                     type: FETCH_SUCCESS,
                     payload: {
                         data,
-                        byName
+                        byName,
+                        names
                     }
                 });
             }

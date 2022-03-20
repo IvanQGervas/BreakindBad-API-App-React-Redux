@@ -1,5 +1,6 @@
 /**
- * Claves de los idiomas disponibles en el diccionario
+ * Claves de los idiomas disponibles en el
+ * diccionario y nombres de los idiomas.
  */
 
 const lang = {

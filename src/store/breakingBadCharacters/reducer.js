@@ -14,6 +14,7 @@ import {
 // Estado inicial
 const initialState = {
     byName: null,
+    names: null,
     data: null,
     failFetch: false,
     loading: false
@@ -40,6 +41,7 @@ export default function breakingBadCharactersReducer(state = initialState, actio
         case FETCH_ATTEMPT:
             return {
                 byName: null,
+                names: null,
                 data: null,
                 failFetch: false,
                 loading: true

@@ -5,15 +5,15 @@
 import React from "react";
 
 // Hooks
-import useLang from "../../hooks/useLang";
+import useLang from "../../../hooks/useLang";
 
 // Componentes
-import { ButtonLight } from './Button'
+import { ButtonLight } from '../Button'
 
 /**
  * Manejador de errores.
- * Renderiza una alerta de error. Puede recibir una
- * función de callback asociada a un botón.
+ * Renderiza una alerta con un mensaje.
+ * Puede recibir una función de callback asociada a un botón.
  * 
  * @param {String} [errMsg]       Mensaje de error
  * @param {Object} [handlerErr]   Objeto con una función de cb para
