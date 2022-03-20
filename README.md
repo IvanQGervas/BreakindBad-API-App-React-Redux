@@ -46,8 +46,9 @@ En caso de iniciar el proyecto y no haberse abierto automáticamente una nueva v
 
 La web actualmente se encuentra desplegada de manera gratuita en la plataforma [Netlify](https://www.netlify.com/).
 
-Enlace del proyecto: https://confident-wescoff-87becb.netlify.app/
+Enlace del proyecto: https://app-breaking-bad.netlify.app/
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5be84bf-cda6-4f8e-a92e-712fd70f8d17/deploy-status)](https://app.netlify.com/sites/app-breaking-bad/deploys)
 
 ## Construido con 🛠️
 
@@ -69,7 +70,7 @@ Primero una imagen con una vista general a las carpetas y luego entraré en deta
 [![](https://i.gyazo.com/756c4d1cc369962a07a44f137d44c60f.png)](https://i.gyazo.com/756c4d1cc369962a07a44f137d44c60f.png)
 
 #### Public
-Archivos estáticos de la aplicación como el archivo index.html y el favicon.ico.
+Archivos estáticos de la aplicación como el archivo index.html y el favicon.png.
 
 ----
 #### src
