@@ -70,7 +70,7 @@ Primero una imagen con una vista general a las carpetas y luego entraré en deta
 [![](https://i.gyazo.com/756c4d1cc369962a07a44f137d44c60f.png)](https://i.gyazo.com/756c4d1cc369962a07a44f137d44c60f.png)
 
 #### Public
-Archivos estáticos de la aplicación como el archivo index.html y el favicon.ico.
+Archivos estáticos de la aplicación como el archivo index.html y el favicon.png.
 
 ----
 #### src
