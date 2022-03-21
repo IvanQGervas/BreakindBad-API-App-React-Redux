@@ -89,12 +89,12 @@ En el caso de este proyecto se han ido generando conforme a la necesidad, pensan
 
 Os dejo con una breve explicación de algunas de las carpetas y componentes más relevantes:
 
-###### Characteres
-Esta carpeta contiene diferentes componentes, todos relacionados con el renderizado de información de personajes. Por ejemplo, el componente Characteres que da nombre a la carpeta permite renderizar todos los personajes recibidos de la API, con la ayuda de otros componentes como Pagination o Card.
+###### Characters
+Esta carpeta contiene diferentes componentes, todos relacionados con el renderizado de información de personajes. Por ejemplo, el componente Characters que da nombre a la carpeta permite renderizar todos los personajes recibidos de la API, con la ayuda de otros componentes como Pagination o Card.
 
 Por poner otro ejemplo, en esta carpeta también encontramos el componente CharacterData que permite renderizar toda la información de un personaje únicamente recibiendo su nombre a través de parámetros o de forma aleatoria.
 
-###### ContainerBreakpoits
+###### ContainerBreakpoints
 Este componente está creado para globalizar y mantener una línea de estilo.
 
 Por ejemplo, centrar de igual manera los contenidos de todas las páginas y el header, haciendo que estos ocupen la misma anchura y compartan los mismos puntos de ruptura en el responsive.

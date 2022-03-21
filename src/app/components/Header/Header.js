@@ -7,7 +7,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Componentes
-import ContainerBreakpoits from '../ContainerBreakpoits';
+import ContainerBreakpoints from '../ContainerBreakpoints';
 import LangSelector from '../LangSelector';
 import LiNavigation from './LiNavigation';
 import UlNavigation from './UlNavigation';
@@ -34,7 +34,7 @@ const Header = () => {
 
     return (
         <nav className='navbar navbar-expand navbar-light bg-light'>
-            <ContainerBreakpoits>
+            <ContainerBreakpoints>
                 <Link
                     className='navbar-brand'
                     to={routes.HomePage}>
@@ -54,7 +54,7 @@ const Header = () => {
                     </UlNavigation>
                     <LangSelector />
                 </div>
-            </ContainerBreakpoits>
+            </ContainerBreakpoints>
         </nav>
     );
 };

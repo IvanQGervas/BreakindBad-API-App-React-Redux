@@ -2,12 +2,12 @@
  * Componente página de personaje
  */
 // Dependencias
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 // Componentes
-import { CharacterData } from '../components/Characteres';
-import { CharacterQuotes } from '../components/Characteres';
-import ContainerBreakpoits from "../components/ContainerBreakpoits";
+import { CharacterData } from '../components/Characters';
+import { CharacterQuotes } from '../components/Characters';
+import ContainerBreakpoints from '../components/ContainerBreakpoints';
 
 /**
  * Componente página de personaje.
@@ -22,12 +22,12 @@ const CharacterPage = () => {
     const [nameRenderedCharacter, setNameRenderedCharacter] = useState();
 
     return (
-        <ContainerBreakpoits>
+        <ContainerBreakpoints>
             <CharacterData setNameRenderedCharacter={setNameRenderedCharacter} />
             {nameRenderedCharacter &&
                 <CharacterQuotes characterName={nameRenderedCharacter} />
             }
-        </ContainerBreakpoits>
+        </ContainerBreakpoints>
     );
 };
 

@@ -3,7 +3,7 @@
  */
 
 // Componentes
-import Characteres from "./Characteres";
+import Characters from "./Characters";
 import CharacterData from "./CharacterData";
 import CharacterQuotes from "./CharacterQuotes";
 import ContentCharacterData from "./ContentCharacterData";
@@ -16,4 +16,4 @@ export {
     ElementContentData
 };
 
-export default Characteres;
+export default Characters;

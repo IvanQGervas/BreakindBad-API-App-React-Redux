@@ -22,7 +22,7 @@ import Spinner from "../Spinner";
  * En caso de error, renderiza una alerta en
  * pantalla y permite reintentar la carga.
  */
-const Characteres = () => {
+const Characters = () => {
 
     // Hook de los personajes de Breaking Bad
     let [
@@ -95,4 +95,4 @@ const Characteres = () => {
     );
 };
 
-export default Characteres;
+export default Characters;

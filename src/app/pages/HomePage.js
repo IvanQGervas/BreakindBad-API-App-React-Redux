@@ -2,16 +2,16 @@
  * Componente página de inicio
  */
 // Dependencias
-import React from "react";
+import React from 'react';
 
 // Componentes
-import Banner from "../components/Banner/index";
-import Characteres from "../components/Characteres";
-import ContainerBreakpoits from "../components/ContainerBreakpoits";
-import Title from "../components/Title";
+import Banner from '../components/Banner/index';
+import Characters from '../components/Characters';
+import ContainerBreakpoints from '../components/ContainerBreakpoints';
+import Title from '../components/Title';
 
 // Hooks
-import useLang from "../../hooks/useLang";
+import useLang from '../../hooks/useLang';
 
 /**
  * Componente página de inicio
@@ -22,7 +22,7 @@ const HomePage = () => {
     const [, { __ }] = useLang();
 
     return (
-        <ContainerBreakpoits>
+        <ContainerBreakpoints>
             <Banner
                 classNameContainer="p-4 p-md-5 mb-3 mt-lg-3 text-white bg-banner-home"
                 secondaryText={__('HOME_BANNER',
@@ -31,9 +31,9 @@ const HomePage = () => {
             <Title>
                 {__('TITLE_PAGE_HOME', 'Personajes')}
             </Title>
-            <Characteres />
-        </ContainerBreakpoits>
+            <Characters />
+        </ContainerBreakpoints>
     );
-}
+};
 
 export default HomePage;

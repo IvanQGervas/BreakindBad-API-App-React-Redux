@@ -14,7 +14,7 @@ import React from "react";
  * @param {Element} children    Elemento hijo
  * @param {String} [className]  Clases para el contenedor
  */
-const ContainerBreakpoits = ({ children, className }) => {
+const ContainerBreakpoints = ({ children, className }) => {
     return (
         <div className={[
             'container-fluid',
@@ -25,4 +25,4 @@ const ContainerBreakpoits = ({ children, className }) => {
     );
 }
 
-export default ContainerBreakpoits;
+export default ContainerBreakpoints;

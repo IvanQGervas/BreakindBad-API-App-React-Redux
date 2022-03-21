@@ -3,7 +3,7 @@
  * 
  */
 // Dependencias
-import React from "react";
+import React from 'react';
 
 /**
  * Banner.
@@ -36,6 +36,6 @@ const Banner = ({ classNameContainer, secondaryText, title }) => {
             }
         </div>
     );
-}
+};
 
 export default Banner;

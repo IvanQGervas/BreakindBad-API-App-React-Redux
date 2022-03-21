@@ -3,7 +3,7 @@
  * 
  */
 // Dependencias
-import React from "react";
+import React from 'react';
 
 /**
  * Renderiza una frase y el nombre de su autor.
