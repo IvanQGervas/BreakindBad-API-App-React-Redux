@@ -58,7 +58,7 @@ Enlace del proyecto: https://app-breaking-bad.netlify.app/
 + **/** - Página de inicio
 + **/random-character** - Datos de un personaje aleatorio
 + **/character/*Nombre de un personaje*** - Datos de un personaje
-+ **/?? ** - Cualquier otra ruta no establecida redirige a la página de inicio
++ **/??** - Cualquier otra ruta no establecida redirige a la página de inicio
 
 ### Sistema de carpetas 🌇
 Primero una imagen con una vista general a las carpetas y luego entraré en detalle un poco más en detalle con una breve explicación de cada una de ellas.
