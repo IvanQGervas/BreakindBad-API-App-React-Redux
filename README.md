@@ -171,7 +171,7 @@ En este proyecto, todos los datos y acciones creadoras de los estados globales s
 
 El hecho de que no se acceda directamente a datos o funciones del store desde la aplicación y deba ser a través de hooks, permite tener un mejor control sobre las opciones de modificación y acceso a datos de los estados. Y tener una capa de lógica intermedia en caso de modificaciones o implementaciones, garantizando una mejor escalabilidad del proyecto.
 
-En proyectos pequeños se podrían utilizar soluciones más simples que Redux, como el propio Context que ofrece React. Pero la decisión de implementar un store más complejo, en este caso, es que nos va a permitir a la larga tener una mejor organización y acceso a las posibilidades que ofrezcan los estados. Por ejemplo, si quisiéramos aprovechas más servicios de la API de Breaking Bad, implementar nuevas APIs relacionadas con el tema, o de nuevas series de las que queramos ofrecer información a los usuarios.
+En proyectos pequeños se podrían utilizar soluciones más simples que Redux, como el propio Context que ofrece React. Pero la decisión de implementar un store más complejo, en este caso, es que nos va a permitir a la larga tener una mejor organización y acceso a las posibilidades que ofrezcan los estados. Por ejemplo, si quisiéramos aprovechar más servicios de la API de Breaking Bad, implementar nuevas APIs relacionadas con el tema, o de nuevas series de las que queramos ofrecer información a los usuarios.
 
 Los estados de los que dispone la aplicación actualmente son:
 + **breakingBadCharacterQuotes** - Ofrece frases aleatorias de un personaje de Breaking Bad con uno de los servicios de la aplicación.
